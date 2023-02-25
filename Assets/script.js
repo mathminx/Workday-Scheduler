@@ -1,13 +1,15 @@
-// Wrap all code that interacts with the DOM in a call to jQuery to ensure that
-// the code isn't run until the browser has finished rendering all the elements
-// in the html.
+// All code that interacts with the DOM wrapped in a call to jQuery 
+// to ensure that the code isn't run until the browser has finished 
+// rendering all the elements in the html.
 
 $(function () {
   refreshTimeSlots();
   getEvents();
 
-  //Save button with listener. When clicked, the user input is saved in  
-  //local storage using the id in the containing time-block as the key.
+  //Save button with listener; when clicked, user input is saved in  
+  //local storage using the id in the containing time-block as the 
+  //first value in the object. The object also contains a unix timestamp 
+  //to make each saved item unique.
   $(".saveBtn").on("click", saveEvents);
   
   function saveEvents() {
@@ -16,11 +18,13 @@ $(function () {
     if (savedEvents !== null) {
       eventsArray = savedEvents;
     }
-    var newEvent = {"ID": dayjs().valueOf(), "Time": $(this).parent().attr("id"), "Event": $(this).siblings(".description").val()};
+    var newEvent = {"Time": $(this).parent().attr("id"), "Event": $(this).siblings(".description").val(), "ID": dayjs().valueOf()};
     eventsArray.push(newEvent);
     localStorage.setItem("myEvents", JSON.stringify(eventsArray));
   }
   
+  // Retrieve any user input that was saved in localStorage and set
+  // the values of the corresponding textarea elements.
   function getEvents() {
   var savedEvents = JSON.parse(localStorage.getItem("myEvents"));
   $(savedEvents).each(function() {
@@ -53,8 +57,5 @@ $(function () {
       }
     });
   }
- 
-  // TODO: Add code to get any user input that was saved in localStorage and set
-  // the values of the corresponding textarea elements. HINT: How can the id
-  // attribute of each time-block be used to do this?
+
 });
