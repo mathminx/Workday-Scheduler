@@ -28,4 +28,4 @@ The style.css and index.html files were provided.
 MIT License
 
 ## Badges
-file:///C:/Users/mathm/bootcamp/Badges/badges.html
+
