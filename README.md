@@ -16,7 +16,7 @@ When the user opens the planner, the current day is displayed at the top of the 
 ![Workday Planner Landing Page](https://user-images.githubusercontent.com/122234007/221419189-c16eb536-d095-41bc-8959-df39c408d935.png)
 
 
-Each time block is color coded to indicate whether it is in the past, present, or future. The user can click into any time block, enter an event, and save it to local storage. When the page is refreshed, the saved events persist.
+Each time block is color coded to indicate whether it is in the past, present, or future. To enter an event, the user can click into the appropriate time block, input the event details, and click the save button at the right of the time block to save it to local storage. When the page is refreshed, the saved events persist.
 
 ![Workday Planner Colours](https://user-images.githubusercontent.com/122234007/221419228-b5b08b91-83d4-4766-bef6-d0b8e6e3bcbb.png)
 
