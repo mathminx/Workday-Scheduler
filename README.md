@@ -28,3 +28,4 @@ The style.css and index.html files were provided.
 MIT License
 
 ## Badges
+![image](https://user-images.githubusercontent.com/122234007/221422266-8f64f388-e46f-4922-a904-3f9c9b0868be.png)
