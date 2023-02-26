@@ -1,13 +1,16 @@
 # Challenge 5 - Work Day Scheduler
 
-Insert link here
+https://mathminx.github.io/Workday-Scheduler/
+
 
 ## Description
 
 This is a simple calendar application that allows a user to save events for each hour of the day. It was created by modifying starter code. The app runs in the browser and features dynamically updated HTML and CSS powered by jQuery.
 
+
 ## Installation
 The project is deployed via GitHub Pages.
+
 
 ## Usage:
 
@@ -24,8 +27,8 @@ Each time block is color coded to indicate whether it is in the past, present, o
 ## Credits
 The style.css and index.html files were provided.
 
+
 ## License
 MIT License
 
-## Badges
 
